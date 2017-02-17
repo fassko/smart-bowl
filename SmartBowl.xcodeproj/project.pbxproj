@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63642FD31E57BE2600E6E773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD21E57BE2600E6E773 /* AppDelegate.swift */; };
+		63642FD51E57BE2600E6E773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD41E57BE2600E6E773 /* ViewController.swift */; };
+		63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FD61E57BE2600E6E773 /* Main.storyboard */; };
+		63642FDA1E57BE2600E6E773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63642FD91E57BE2600E6E773 /* Assets.xcassets */; };
+		63642FDD1E57BE2600E6E773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FDB1E57BE2600E6E773 /* LaunchScreen.storyboard */; };
+		63642FE21E57BE2600E6E773 /* SmartBowl WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 63642FE11E57BE2600E6E773 /* SmartBowl WatchKit App.app */; };
+		63642FE81E57BE2600E6E773 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FE61E57BE2600E6E773 /* Interface.storyboard */; };
+		63642FEA1E57BE2600E6E773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63642FE91E57BE2600E6E773 /* Assets.xcassets */; };
+		63642FF11E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63642FF01E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63642FF81E57BE2600E6E773 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FF71E57BE2600E6E773 /* InterfaceController.swift */; };
+		63642FFA1E57BE2600E6E773 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FF91E57BE2600E6E773 /* ExtensionDelegate.swift */; };
+		63642FFC1E57BE2600E6E773 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FFB1E57BE2600E6E773 /* NotificationController.swift */; };
+		63642FFE1E57BE2600E6E773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63642FFD1E57BE2600E6E773 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63642FE31E57BE2600E6E773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63642FC71E57BE2600E6E773 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63642FE01E57BE2600E6E773;
+			remoteInfo = "SmartBowl WatchKit App";
+		};
+		63642FF21E57BE2600E6E773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63642FC71E57BE2600E6E773 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63642FEF1E57BE2600E6E773;
+			remoteInfo = "SmartBowl WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		636430051E57BE2600E6E773 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63642FF11E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636430091E57BE2600E6E773 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				63642FE21E57BE2600E6E773 /* SmartBowl WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63642FCF1E57BE2600E6E773 /* SmartBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63642FD21E57BE2600E6E773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63642FD41E57BE2600E6E773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63642FD71E57BE2600E6E773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63642FD91E57BE2600E6E773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63642FDC1E57BE2600E6E773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63642FDE1E57BE2600E6E773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63642FE11E57BE2600E6E773 /* SmartBowl WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartBowl WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63642FE71E57BE2600E6E773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		63642FE91E57BE2600E6E773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63642FEB1E57BE2600E6E773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63642FF01E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmartBowl WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63642FF61E57BE2600E6E773 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63642FF71E57BE2600E6E773 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		63642FF91E57BE2600E6E773 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		63642FFB1E57BE2600E6E773 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		63642FFD1E57BE2600E6E773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63642FFF1E57BE2600E6E773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63642FCC1E57BE2600E6E773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63642FED1E57BE2600E6E773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63642FC61E57BE2600E6E773 = {
+			isa = PBXGroup;
+			children = (
+				63642FD11E57BE2600E6E773 /* SmartBowl */,
+				63642FE51E57BE2600E6E773 /* SmartBowl WatchKit App */,
+				63642FF41E57BE2600E6E773 /* SmartBowl WatchKit Extension */,
+				63642FD01E57BE2600E6E773 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63642FD01E57BE2600E6E773 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63642FCF1E57BE2600E6E773 /* SmartBowl.app */,
+				63642FE11E57BE2600E6E773 /* SmartBowl WatchKit App.app */,
+				63642FF01E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63642FD11E57BE2600E6E773 /* SmartBowl */ = {
+			isa = PBXGroup;
+			children = (
+				63642FD21E57BE2600E6E773 /* AppDelegate.swift */,
+				63642FD41E57BE2600E6E773 /* ViewController.swift */,
+				63642FD61E57BE2600E6E773 /* Main.storyboard */,
+				63642FD91E57BE2600E6E773 /* Assets.xcassets */,
+				63642FDB1E57BE2600E6E773 /* LaunchScreen.storyboard */,
+				63642FDE1E57BE2600E6E773 /* Info.plist */,
+			);
+			path = SmartBowl;
+			sourceTree = "<group>";
+		};
+		63642FE51E57BE2600E6E773 /* SmartBowl WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				63642FE61E57BE2600E6E773 /* Interface.storyboard */,
+				63642FE91E57BE2600E6E773 /* Assets.xcassets */,
+				63642FEB1E57BE2600E6E773 /* Info.plist */,
+			);
+			path = "SmartBowl WatchKit App";
+			sourceTree = "<group>";
+		};
+		63642FF41E57BE2600E6E773 /* SmartBowl WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63642FF71E57BE2600E6E773 /* InterfaceController.swift */,
+				63642FF91E57BE2600E6E773 /* ExtensionDelegate.swift */,
+				63642FFB1E57BE2600E6E773 /* NotificationController.swift */,
+				63642FFD1E57BE2600E6E773 /* Assets.xcassets */,
+				63642FFF1E57BE2600E6E773 /* Info.plist */,
+				63642FF51E57BE2600E6E773 /* Supporting Files */,
+			);
+			path = "SmartBowl WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		63642FF51E57BE2600E6E773 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63642FF61E57BE2600E6E773 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63642FCE1E57BE2600E6E773 /* SmartBowl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6364300A1E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl" */;
+			buildPhases = (
+				63642FCB1E57BE2600E6E773 /* Sources */,
+				63642FCC1E57BE2600E6E773 /* Frameworks */,
+				63642FCD1E57BE2600E6E773 /* Resources */,
+				636430091E57BE2600E6E773 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63642FE41E57BE2600E6E773 /* PBXTargetDependency */,
+			);
+			name = SmartBowl;
+			productName = SmartBowl;
+			productReference = 63642FCF1E57BE2600E6E773 /* SmartBowl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63642FE01E57BE2600E6E773 /* SmartBowl WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636430061E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl WatchKit App" */;
+			buildPhases = (
+				63642FDF1E57BE2600E6E773 /* Resources */,
+				636430051E57BE2600E6E773 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63642FF31E57BE2600E6E773 /* PBXTargetDependency */,
+			);
+			name = "SmartBowl WatchKit App";
+			productName = "SmartBowl WatchKit App";
+			productReference = 63642FE11E57BE2600E6E773 /* SmartBowl WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		63642FEF1E57BE2600E6E773 /* SmartBowl WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636430021E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl WatchKit Extension" */;
+			buildPhases = (
+				63642FEC1E57BE2600E6E773 /* Sources */,
+				63642FED1E57BE2600E6E773 /* Frameworks */,
+				63642FEE1E57BE2600E6E773 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartBowl WatchKit Extension";
+			productName = "SmartBowl WatchKit Extension";
+			productReference = 63642FF01E57BE2600E6E773 /* SmartBowl WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63642FC71E57BE2600E6E773 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = fassko;
+				TargetAttributes = {
+					63642FCE1E57BE2600E6E773 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3SGNZQGS68;
+						ProvisioningStyle = Automatic;
+					};
+					63642FE01E57BE2600E6E773 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3SGNZQGS68;
+						ProvisioningStyle = Automatic;
+					};
+					63642FEF1E57BE2600E6E773 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3SGNZQGS68;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 63642FCA1E57BE2600E6E773 /* Build configuration list for PBXProject "SmartBowl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63642FC61E57BE2600E6E773;
+			productRefGroup = 63642FD01E57BE2600E6E773 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63642FCE1E57BE2600E6E773 /* SmartBowl */,
+				63642FE01E57BE2600E6E773 /* SmartBowl WatchKit App */,
+				63642FEF1E57BE2600E6E773 /* SmartBowl WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63642FCD1E57BE2600E6E773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63642FDD1E57BE2600E6E773 /* LaunchScreen.storyboard in Resources */,
+				63642FDA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+				63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63642FDF1E57BE2600E6E773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63642FEA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+				63642FE81E57BE2600E6E773 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63642FEE1E57BE2600E6E773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63642FFE1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63642FCB1E57BE2600E6E773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63642FD51E57BE2600E6E773 /* ViewController.swift in Sources */,
+				63642FD31E57BE2600E6E773 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63642FEC1E57BE2600E6E773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63642FFC1E57BE2600E6E773 /* NotificationController.swift in Sources */,
+				63642FFA1E57BE2600E6E773 /* ExtensionDelegate.swift in Sources */,
+				63642FF81E57BE2600E6E773 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63642FE41E57BE2600E6E773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63642FE01E57BE2600E6E773 /* SmartBowl WatchKit App */;
+			targetProxy = 63642FE31E57BE2600E6E773 /* PBXContainerItemProxy */;
+		};
+		63642FF31E57BE2600E6E773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63642FEF1E57BE2600E6E773 /* SmartBowl WatchKit Extension */;
+			targetProxy = 63642FF21E57BE2600E6E773 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63642FD61E57BE2600E6E773 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63642FD71E57BE2600E6E773 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63642FDB1E57BE2600E6E773 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63642FDC1E57BE2600E6E773 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63642FE61E57BE2600E6E773 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63642FE71E57BE2600E6E773 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		636430001E57BE2600E6E773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		636430011E57BE2600E6E773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		636430031E57BE2600E6E773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = "SmartBowl WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		636430041E57BE2600E6E773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = "SmartBowl WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		636430071E57BE2600E6E773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				IBSC_MODULE = SmartBowl_WatchKit_Extension;
+				INFOPLIST_FILE = "SmartBowl WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		636430081E57BE2600E6E773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				IBSC_MODULE = SmartBowl_WatchKit_Extension;
+				INFOPLIST_FILE = "SmartBowl WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		6364300B1E57BE2600E6E773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = SmartBowl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6364300C1E57BE2600E6E773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = SmartBowl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.SmartBowl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63642FCA1E57BE2600E6E773 /* Build configuration list for PBXProject "SmartBowl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636430001E57BE2600E6E773 /* Debug */,
+				636430011E57BE2600E6E773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636430021E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636430031E57BE2600E6E773 /* Debug */,
+				636430041E57BE2600E6E773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		636430061E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636430071E57BE2600E6E773 /* Debug */,
+				636430081E57BE2600E6E773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6364300A1E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6364300B1E57BE2600E6E773 /* Debug */,
+				6364300C1E57BE2600E6E773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63642FC71E57BE2600E6E773 /* Project object */;
+}
