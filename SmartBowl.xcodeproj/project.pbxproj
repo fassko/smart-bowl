@@ -754,6 +754,7 @@
 				636430041E57BE2600E6E773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		636430061E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +763,7 @@
 				636430081E57BE2600E6E773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6364300A1E57BE2600E6E773 /* Build configuration list for PBXNativeTarget "SmartBowl" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +772,7 @@
 				6364300C1E57BE2600E6E773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
