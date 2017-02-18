@@ -1,0 +1,6 @@
+framework module Pods_SmartBowl {
+  umbrella header "Pods-SmartBowl-umbrella.h"
+
+  export *
+  module * { export * }
+}
