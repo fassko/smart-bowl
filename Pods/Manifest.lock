@@ -1,15 +1,64 @@
 PODS:
+  - Firebase (3.13.0):
+    - Firebase/Core (= 3.13.0)
+  - Firebase/Core (3.13.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.0)
+  - Firebase/Database (3.13.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 3.1.2)
+  - Firebase/Messaging (3.13.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 1.2.2)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (3.1.2):
+    - FirebaseAnalytics (~> 3.7)
+  - FirebaseInstanceID (1.0.9)
+  - FirebaseMessaging (1.2.2):
+    - FirebaseAnalytics (~> 3.7)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - LNRSimpleNotifications (0.6.1)
+  - Protobuf (3.2.0)
   - RxBluetoothKit (3.0.6):
     - RxSwift (~> 3.0)
   - RxSwift (3.2.0)
+  - SwiftHEXColors (1.1.0)
 
 DEPENDENCIES:
+  - Firebase (~> 3.13)
+  - Firebase/Core
+  - Firebase/Database
+  - Firebase/Messaging
+  - LNRSimpleNotifications (~> 0.6)
   - RxBluetoothKit (~> 3.0)
+  - SwiftHEXColors (~> 1.1)
 
 SPEC CHECKSUMS:
+  Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 1c0a13bf59bb95cdd19577252499f0ec6a03e999
+  FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  LNRSimpleNotifications: 4602ddc63444b42b1653681730678af1585c5fa3
+  Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
   RxBluetoothKit: b01ecd594efc24fde7f803640436d5423aaa7ff5
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: 6b3a3f787f0809a821bf92aee640fdb818f732cb
+PODFILE CHECKSUM: 86d3f12b0fb7d0c15a27ca885626272dbe0f9ff6
 
 COCOAPODS: 1.2.0

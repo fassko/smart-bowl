@@ -10,6 +10,12 @@
 		077EE79EE64BC2B8781AFB9A /* Pods_SmartBowl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF30E711B929E730DD69E1B /* Pods_SmartBowl.framework */; };
 		5970FD3F30F70907530EB419 /* Pods_SmartBowl_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A62D52C699B87355C03CE /* Pods_SmartBowl_WatchKit_App.framework */; };
 		62AE211490F3008681D68C28 /* Pods_SmartBowl_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203569578D2F9618D7134263 /* Pods_SmartBowl_WatchKit_Extension.framework */; };
+		6327AB911E587B99002C646B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB901E587B99002C646B /* GoogleService-Info.plist */; };
+		6327AB921E587B99002C646B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB901E587B99002C646B /* GoogleService-Info.plist */; };
+		6327AB931E587B99002C646B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB901E587B99002C646B /* GoogleService-Info.plist */; };
+		6327AB951E588AD2002C646B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6327AB941E588AD2002C646B /* AudioToolbox.framework */; };
+		6327AB971E5894D7002C646B /* smoke-detector-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB961E5894D7002C646B /* smoke-detector-1.wav */; };
+		6327AB991E5896A0002C646B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB981E5896A0002C646B /* icon.png */; };
 		63642FD31E57BE2600E6E773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD21E57BE2600E6E773 /* AppDelegate.swift */; };
 		63642FD51E57BE2600E6E773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD41E57BE2600E6E773 /* ViewController.swift */; };
 		63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FD61E57BE2600E6E773 /* Main.storyboard */; };
@@ -73,6 +79,10 @@
 		24B80FCB4518C264C75EE1C1 /* Pods-SmartBowl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBowl.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBowl/Pods-SmartBowl.release.xcconfig"; sourceTree = "<group>"; };
 		4658547F0E5AE23BAB0947C0 /* Pods-SmartBowl WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBowl WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBowl WatchKit App/Pods-SmartBowl WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		5C46C7E37A2EAEA55AC7BB7F /* Pods-SmartBowl WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBowl WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBowl WatchKit Extension/Pods-SmartBowl WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6327AB901E587B99002C646B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6327AB941E588AD2002C646B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6327AB961E5894D7002C646B /* smoke-detector-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "smoke-detector-1.wav"; sourceTree = "<group>"; };
+		6327AB981E5896A0002C646B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		63642FCF1E57BE2600E6E773 /* SmartBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63642FD21E57BE2600E6E773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63642FD41E57BE2600E6E773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6327AB951E588AD2002C646B /* AudioToolbox.framework in Frameworks */,
 				077EE79EE64BC2B8781AFB9A /* Pods_SmartBowl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +167,9 @@
 				63642FD91E57BE2600E6E773 /* Assets.xcassets */,
 				63642FDB1E57BE2600E6E773 /* LaunchScreen.storyboard */,
 				63642FDE1E57BE2600E6E773 /* Info.plist */,
+				6327AB901E587B99002C646B /* GoogleService-Info.plist */,
+				6327AB961E5894D7002C646B /* smoke-detector-1.wav */,
+				6327AB981E5896A0002C646B /* icon.png */,
 			);
 			path = SmartBowl;
 			sourceTree = "<group>";
@@ -207,6 +221,7 @@
 		D4FA8114EC69D5E20B0EF967 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6327AB941E588AD2002C646B /* AudioToolbox.framework */,
 				1AF30E711B929E730DD69E1B /* Pods_SmartBowl.framework */,
 				682A62D52C699B87355C03CE /* Pods_SmartBowl_WatchKit_App.framework */,
 				203569578D2F9618D7134263 /* Pods_SmartBowl_WatchKit_Extension.framework */,
@@ -333,7 +348,10 @@
 			files = (
 				63642FDD1E57BE2600E6E773 /* LaunchScreen.storyboard in Resources */,
 				63642FDA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+				6327AB991E5896A0002C646B /* icon.png in Resources */,
 				63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */,
+				6327AB911E587B99002C646B /* GoogleService-Info.plist in Resources */,
+				6327AB971E5894D7002C646B /* smoke-detector-1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63642FEA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+				6327AB921E587B99002C646B /* GoogleService-Info.plist in Resources */,
 				63642FE81E57BE2600E6E773 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63642FFE1E57BE2600E6E773 /* Assets.xcassets in Resources */,
+				6327AB931E587B99002C646B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

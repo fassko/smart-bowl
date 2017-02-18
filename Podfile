@@ -6,6 +6,12 @@ target 'SmartBowl' do
   use_frameworks!
 
   pod 'RxBluetoothKit', '~> 3.0'
+  pod 'Firebase', '~> 3.13'
+  pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'LNRSimpleNotifications', '~> 0.6'
+  pod 'SwiftHEXColors', '~> 1.1'
 
 end
 

@@ -8,17 +8,32 @@
 
 import UIKit
 
+import UserNotifications
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate  {
 
   var window: UIWindow?
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    FIRApp.configure()
+    
     // Override point for customization after application launch.
+    let center = UNUserNotificationCenter.current()
+    center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        // Enable or disable features based on authorization.
+    }
+    
     return true
   }
-
+  
+  
+  
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -40,7 +55,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
+  
 }
+
+//  @available(iOS 10, *)
+//  extension AppDelegate : UNUserNotificationCenterDelegate {
+//
+//    // Receive displayed notifications for iOS 10 devices.
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        let userInfo = notification.request.content.userInfo
+//        // Print message ID.
+//        print("Message ID: \(userInfo["gcm.message_id"]!)")
+//
+//        // Print full message.
+//        print("%@", userInfo)
+//
+//    }
+//
+//  }
+//
+//  extension AppDelegate : FIRMessagingDelegate {
+//    // Receive data message on iOS 10 devices.
+//    func applicationReceivedRemoteMessage(_ remoteMessage: FIRMessagingRemoteMessage) {
+//        print("%@", remoteMessage.appData)
+//    }
+//  }
 
