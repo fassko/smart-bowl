@@ -15,6 +15,8 @@ import Firebase
 import LNRSimpleNotifications
 import AudioToolbox
 import SwiftHEXColors
+import Lottie
+
 
 class ViewController: UIViewController {
 
@@ -32,11 +34,28 @@ class ViewController: UIViewController {
   
   @IBOutlet var connectButton: UIButton!
   
+  fileprivate var lottieLogo: LOTAnimationView!
+  
   
   let notificationManager = LNRNotificationManager()
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+//      lottieLogo = LOTAnimationView.animationNamed("data")
+//      lottieLogo.contentMode = .scaleAspectFill
+    
+//    let animationView = LOTAnimationView.animationNamed("data.json")
+//    animationView?.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
+//    animationView?.contentMode = .scaleAspectFill
+    
+//    animationView?.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.3)
+    
+//    self.view.addSubview(animationView!)
+
+//    animationView?.play(completion: { (finished) in
+//      // Do Something
+//    })
     
     connectButton.layer.borderColor = UIColor.white.cgColor
     
@@ -56,6 +75,15 @@ class ViewController: UIViewController {
       notificationManager.notificationSound = mySound
     }
   }
+  
+//  override func viewDidAppear(_ animated: Bool) {
+//    lottieLogo.play()
+//  }
+//  
+//  override func viewDidLayoutSubviews() {
+//    lottieLogo.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.3)
+//    view.addSubview(lottieLogo)
+//  }
   
   @IBAction func scan(_ sender: Any) {
   
@@ -145,22 +173,17 @@ class ViewController: UIViewController {
     
     value = Int(weight)
     
-//    let data4 = data?.subdata(in: 0..<4)
-//    let int = CFSwapInt32BigToHost(data4)
-    
-//    data4
-//    
-//    var i = CFSwapInt32BigToHost(data4
-//    
-//int value = CFSwapInt32BigToHost(*(int*)([data4 bytes]));
+    //    let data4 = data?.subdata(in: 0..<4)
+    //    let int = CFSwapInt32BigToHost(data4)
+        
+    //    data4
+    //    
+    //    var i = CFSwapInt32BigToHost(data4
+    //    
+    //int value = CFSwapInt32BigToHost(*(int*)([data4 bytes]));
 
-    
+    //    let val = UInt32(bigEndian: bigEndianValue)
 
-    
-//    let val = UInt32(bigEndian: bigEndianValue)
-
-    
-    
     self.weight.text = "\(value)"
     
     print("Weight = \(value)")

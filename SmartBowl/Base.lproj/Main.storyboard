@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-jM-hnD">
-                                <rect key="frame" x="40" y="45" width="295" height="62"/>
+                                <rect key="frame" x="40" y="60" width="295" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="FJ2-WY-Xkd"/>
                                     <constraint firstAttribute="height" constant="62" id="yaF-d7-HNm"/>
@@ -89,7 +89,7 @@
                             <constraint firstItem="dhG-ak-Txd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83S-a6-72r"/>
                             <constraint firstItem="dhG-ak-Txd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ix6-eJ-Dtg"/>
                             <constraint firstAttribute="trailing" secondItem="x9E-jS-ewX" secondAttribute="trailing" id="J30-cf-lrB"/>
-                            <constraint firstItem="YEn-jM-hnD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="SvR-DA-tB1"/>
+                            <constraint firstItem="YEn-jM-hnD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="SvR-DA-tB1"/>
                             <constraint firstItem="x9E-jS-ewX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fwu-XH-GYE"/>
                             <constraint firstItem="YEn-jM-hnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="jNG-cR-6bn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YEn-jM-hnD" secondAttribute="trailing" constant="24" id="mw2-3f-N6Z"/>
