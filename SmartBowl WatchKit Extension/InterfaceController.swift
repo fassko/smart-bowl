@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import MMWormhole
 
 
 class InterfaceController: WKInterfaceController {
@@ -15,8 +16,16 @@ class InterfaceController: WKInterfaceController {
   @IBOutlet var scale: WKInterfaceLabel!
 
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
+      super.awake(withContext: context)
+      
+//      let wormhole = MMWormhole(applicationGroupIdentifier: "group.owlbowl.scale", optionalDirectory: nil)
+//      wormhole.listenForMessage(withIdentifier: "scale", listener: { (message ) -> Void in
+//      if let messageFromPhone = message as? String {
+//        print(message)
+//        self.scale.setText("\(message) grams")
+//      }
+//})
+      
         // Configure interface objects here.
     }
     

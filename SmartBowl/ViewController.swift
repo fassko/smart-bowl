@@ -15,7 +15,7 @@ import Firebase
 import LNRSimpleNotifications
 import AudioToolbox
 import SwiftHEXColors
-import Lottie
+import MMWormhole
 
 
 class ViewController: UIViewController {
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
   var ref:  FIRDatabaseReference!
   
   /// Lottie animation view
-  fileprivate var lottieLogo: LOTAnimationView!
+//  fileprivate var lottieLogo: LOTAnimationView!
   
   /// Notification manager
   let notificationManager = LNRNotificationManager()
@@ -46,6 +46,8 @@ class ViewController: UIViewController {
   
   @IBOutlet var bowl: UIImageView!
   
+  var wormhole:MMWormhole?
+  
   @IBAction func changes(_ sender: Any) {
     changes.value += 1
   }
@@ -54,9 +56,24 @@ class ViewController: UIViewController {
     changes.value = 0
   }
   
+  var i = 0
+  
+  @IBAction func post(_ sender: Any) {
+    
+    i += 1
+    
+    wormhole?.passMessageObject("\(i) grams" as NSCoding?, identifier: "scale")
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+//    wormhole = MMWormhole(applicationGroupIdentifier: "group.owlbowl.scale", optionalDirectory: nil)
+//    wormhole?.listenForMessage(withIdentifier: "scale", listener: { (message ) -> Void in
+//      if let messageFromWatch = message as? String {
+//            // do something with messageFromWatch
+//      }
+//    })
     
     changes.asObservable()
       .flatMap({c -> Observable<Int> in
@@ -103,12 +120,12 @@ class ViewController: UIViewController {
     notificationManager.notificationsSeperatorColor = UIColor(hexString: "#575656")!// UIColor.white
     notificationManager.notificationsIcon = UIImage(named: "icon.png")
     
-    let alertSoundURL: NSURL? = Bundle.main.url(forResource: "smoke-detector-1", withExtension: "wav") as NSURL?
-    if let _ = alertSoundURL {
-      var mySound: SystemSoundID = 0
-      AudioServicesCreateSystemSoundID(alertSoundURL!, &mySound)
-      notificationManager.notificationSound = mySound
-    }
+//    let alertSoundURL: NSURL? = Bundle.main.url(forResource: "smoke-detector-1", withExtension: "wav") as NSURL?
+//    if let _ = alertSoundURL {
+//      var mySound: SystemSoundID = 0
+//      AudioServicesCreateSystemSoundID(alertSoundURL!, &mySound)
+//      notificationManager.notificationSound = mySound
+//    }
   }
   
 //  override func viewDidAppear(_ animated: Bool) {
@@ -179,6 +196,8 @@ class ViewController: UIViewController {
     }))
   }
   
+  
+  
   /**
     Save weight to Firebase
   */
@@ -221,10 +240,14 @@ class ViewController: UIViewController {
     if timeMeasured == nil || (timeMeasured != nil && Date().timeIntervalSince(timeMeasured!) > 3)  {
       // set value in Firebase
       self.ref.child("scale").child("weight").setValue(value)
-    
+      
       self.changes.value += 1
       
       timeMeasured = Date()
+      
+      
+//      wormhole?.passMessageObject("\(value) grams" as NSCoding?, identifier: "scale")
+      
     }
 
     

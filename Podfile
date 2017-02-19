@@ -12,7 +12,7 @@ target 'SmartBowl' do
   pod 'Firebase/Messaging'
   pod 'LNRSimpleNotifications', '~> 0.6'
   pod 'SwiftHEXColors', '~> 1.1'
-  pod 'lottie-ios', '~> 1.0'
+  pod 'MMWormhole'
 
 end
 
@@ -27,6 +27,7 @@ end
 target 'SmartBowl WatchKit Extension' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  pod 'MMWormhole'
 
   # Pods for SmartBowl WatchKit Extension
 

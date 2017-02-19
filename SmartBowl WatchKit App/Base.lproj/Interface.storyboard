@@ -14,21 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SmartBowl_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="9JF-Ns-XkI"/>
-                        <table alignment="left" id="mRh-fg-lZR">
-                            <items>
-                                <tableRow id="Q7C-kd-3Kw">
-                                    <group key="rootItem" width="1" alignment="left" spacing="10" id="RrZ-3O-q4A">
-                                        <items>
-                                            <label alignment="left" text="0" id="Gva-g6-mHu">
-                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                            </label>
-                                        </items>
-                                    </group>
-                                </tableRow>
-                            </items>
-                        </table>
+                        <label alignment="left" text="0" id="Vbb-h0-YB2">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
                     </items>
+                    <connections>
+                        <outlet property="scale" destination="Vbb-h0-YB2" id="xWa-01-BzI"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
