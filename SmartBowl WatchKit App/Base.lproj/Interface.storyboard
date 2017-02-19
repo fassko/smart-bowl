@@ -14,12 +14,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SmartBowl_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="0" id="Vbb-h0-YB2">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
+                        <imageView alignment="left" image="bowl0" id="uB0-Os-6Cu"/>
+                        <button width="1" alignment="left" title="2,50 kg" id="R7e-VX-F83">
+                            <connections>
+                                <action selector="change" destination="AgC-eL-Hgc" id="Dwx-Vb-Qhn"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
-                        <outlet property="scale" destination="Vbb-h0-YB2" id="xWa-01-BzI"/>
+                        <outlet property="bowlImage" destination="uB0-Os-6Cu" id="gOz-uh-3EW"/>
                     </connections>
                 </controller>
             </objects>

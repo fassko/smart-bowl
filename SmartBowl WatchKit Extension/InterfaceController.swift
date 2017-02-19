@@ -13,10 +13,30 @@ import MMWormhole
 
 class InterfaceController: WKInterfaceController {
 
-  @IBOutlet var scale: WKInterfaceLabel!
+  
+  @IBOutlet var bowlImage: WKInterfaceImage!
+  
+  
+  var i = 0
+  
+  @IBAction func change() {
+  
+    i += 1
+  
+    if i == 5 {
+      i = 0
+    }
+    
+    bowlImage.setImageNamed("bowl\(i).png")
+  
+  }
+  
 
     override func awake(withContext context: Any?) {
       super.awake(withContext: context)
+      
+      
+      
       
 //      let wormhole = MMWormhole(applicationGroupIdentifier: "group.owlbowl.scale", optionalDirectory: nil)
 //      wormhole.listenForMessage(withIdentifier: "scale", listener: { (message ) -> Void in
