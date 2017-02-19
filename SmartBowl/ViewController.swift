@@ -67,6 +67,11 @@ class ViewController: UIViewController {
       })
       .subscribe(onNext: {c in
       
+      
+        if c == 3 {
+          self.showNotification()
+        }
+      
         print(c)
       
         let toImage = UIImage(named:"bowl\(c).png")
@@ -84,6 +89,7 @@ class ViewController: UIViewController {
 //    lottieLogo = LOTAnimationView.animationNamed("LottieLogo1")
 //    lottieLogo.contentMode = .scaleAspectFill
     
+    connectButton.layer.borderWidth = 1
     connectButton.layer.borderColor = UIColor.white.cgColor
     
     ref = FIRDatabase.database().reference()
