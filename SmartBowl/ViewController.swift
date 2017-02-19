@@ -37,6 +37,8 @@ class ViewController: UIViewController {
   
   var changes: Variable<Int> = Variable(0)
   
+  var timeMeasured: Date?
+  
   /// Weight label
   @IBOutlet var weight: UILabel!
   
@@ -215,9 +217,16 @@ class ViewController: UIViewController {
     
     print("Weight = \(value)")
 
-    // set value in Firebase
-    self.ref.child("scale").child("weight").setValue(value)
     
-    self.changes.value += 1
+    if timeMeasured == nil || (timeMeasured != nil && Date().timeIntervalSince(timeMeasured!) > 3)  {
+      // set value in Firebase
+      self.ref.child("scale").child("weight").setValue(value)
+    
+      self.changes.value += 1
+      
+      timeMeasured = Date()
+    }
+
+    
   }
 }
