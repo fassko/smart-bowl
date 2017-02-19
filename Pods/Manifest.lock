@@ -30,6 +30,7 @@ PODS:
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - LNRSimpleNotifications (0.6.1)
+  - lottie-ios (1.0.4)
   - Protobuf (3.2.0)
   - RxBluetoothKit (3.0.6):
     - RxSwift (~> 3.0)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - LNRSimpleNotifications (~> 0.6)
+  - lottie-ios (~> 1.0)
   - RxBluetoothKit (~> 3.0)
   - SwiftHEXColors (~> 1.1)
 
@@ -54,11 +56,12 @@ SPEC CHECKSUMS:
   FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   LNRSimpleNotifications: 4602ddc63444b42b1653681730678af1585c5fa3
+  lottie-ios: 8b2c5ba38105430a72f03ce54be90d8dac950161
   Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
   RxBluetoothKit: b01ecd594efc24fde7f803640436d5423aaa7ff5
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: 86d3f12b0fb7d0c15a27ca885626272dbe0f9ff6
+PODFILE CHECKSUM: 3c39d1911c36a0ff09e8b8e028291e1c3da1b441
 
 COCOAPODS: 1.2.0

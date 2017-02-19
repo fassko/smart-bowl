@@ -12,6 +12,7 @@ target 'SmartBowl' do
   pod 'Firebase/Messaging'
   pod 'LNRSimpleNotifications', '~> 0.6'
   pod 'SwiftHEXColors', '~> 1.1'
+  pod 'lottie-ios', '~> 1.0'
 
 end
 

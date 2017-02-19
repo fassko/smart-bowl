@@ -54,7 +54,7 @@
                                             <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxa-W5-QC9"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-kL-mWf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-kL-mWf">
                                         <rect key="frame" x="8" y="147" width="359" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="LIL-41-fdE"/>
