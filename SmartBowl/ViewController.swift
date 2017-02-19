@@ -69,7 +69,15 @@ class ViewController: UIViewController {
       
         print(c)
       
-        self.bowl.image = UIImage(named: "bowl\(c).png")
+        let toImage = UIImage(named:"bowl\(c).png")
+        
+        UIView.transition(with: self.bowl,
+                         duration: 0.3,
+                         options: .transitionCrossDissolve,
+                         animations: {
+                             self.bowl.image = toImage
+                         },
+                         completion: nil)
       })
       .addDisposableTo(disposeBag)
     
