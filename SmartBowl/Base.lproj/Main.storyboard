@@ -6,8 +6,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-Thin.ttf">
+            <string>Montserrat-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,25 +30,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-de-0cV">
-                                <rect key="frame" x="158" y="318" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connect"/>
-                                <connections>
-                                    <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxa-W5-QC9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-kL-mWf">
-                                <rect key="frame" x="124" y="356" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-jM-hnD">
+                                <rect key="frame" x="40" y="45" width="295" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="FJ2-WY-Xkd"/>
+                                    <constraint firstAttribute="height" constant="62" id="yaF-d7-HNm"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-jS-ewX">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-de-0cV">
+                                        <rect key="frame" x="52" y="62" width="270" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="AKq-nG-M32"/>
+                                            <constraint firstAttribute="height" constant="77" id="TLc-Wa-29I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
+                                        <state key="normal" title="CONNECT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxa-W5-QC9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-kL-mWf">
+                                        <rect key="frame" x="8" y="147" width="359" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LIL-41-fdE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Thin" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70588235294117641" green="0.80000000000000004" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fzn-kL-mWf" firstAttribute="leading" secondItem="x9E-jS-ewX" secondAttribute="leading" constant="8" id="7Iv-e4-H0P"/>
+                                    <constraint firstItem="Btc-de-0cV" firstAttribute="centerY" secondItem="x9E-jS-ewX" secondAttribute="centerY" id="Bj6-mO-g1S"/>
+                                    <constraint firstAttribute="height" constant="200" id="TWg-d2-rLz"/>
+                                    <constraint firstAttribute="bottom" secondItem="fzn-kL-mWf" secondAttribute="bottom" constant="18" id="WmL-rg-vbf"/>
+                                    <constraint firstItem="fzn-kL-mWf" firstAttribute="top" secondItem="Btc-de-0cV" secondAttribute="bottom" constant="8" id="XSG-Pr-dg3"/>
+                                    <constraint firstItem="Btc-de-0cV" firstAttribute="centerX" secondItem="x9E-jS-ewX" secondAttribute="centerX" id="l4G-fV-JSG"/>
+                                    <constraint firstAttribute="trailing" secondItem="fzn-kL-mWf" secondAttribute="trailing" constant="8" id="uIo-rs-VAe"/>
+                                </constraints>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bowl.png" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-ak-Txd">
+                                <rect key="frame" x="75" y="252" width="224" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="Iza-zj-Z0S"/>
+                                    <constraint firstAttribute="width" constant="224" id="fnH-ZA-GYh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x9E-jS-ewX" secondAttribute="bottom" id="7dr-4G-axb"/>
+                            <constraint firstItem="dhG-ak-Txd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83S-a6-72r"/>
+                            <constraint firstItem="dhG-ak-Txd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ix6-eJ-Dtg"/>
+                            <constraint firstAttribute="trailing" secondItem="x9E-jS-ewX" secondAttribute="trailing" id="J30-cf-lrB"/>
+                            <constraint firstItem="YEn-jM-hnD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="SvR-DA-tB1"/>
+                            <constraint firstItem="x9E-jS-ewX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fwu-XH-GYE"/>
+                            <constraint firstItem="YEn-jM-hnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="jNG-cR-6bn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YEn-jM-hnD" secondAttribute="trailing" constant="24" id="mw2-3f-N6Z"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="connectButton" destination="Btc-de-0cV" id="kp2-Ji-IV0"/>
                         <outlet property="weight" destination="fzn-kL-mWf" id="SVl-5a-720"/>
                     </connections>
                 </viewController>
@@ -48,4 +105,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="100.29985007496252"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bowl.png" width="224" height="162"/>
+        <image name="logo.png" width="589" height="124"/>
+    </resources>
 </document>

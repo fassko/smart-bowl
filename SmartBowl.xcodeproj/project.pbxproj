@@ -16,6 +16,10 @@
 		6327AB951E588AD2002C646B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6327AB941E588AD2002C646B /* AudioToolbox.framework */; };
 		6327AB971E5894D7002C646B /* smoke-detector-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB961E5894D7002C646B /* smoke-detector-1.wav */; };
 		6327AB991E5896A0002C646B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB981E5896A0002C646B /* icon.png */; };
+		6327AB9F1E597B2B002C646B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB9D1E597B2B002C646B /* logo.png */; };
+		6327ABA01E597B2B002C646B /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB9E1E597B2B002C646B /* logo@2x.png */; };
+		6327ABA51E598020002C646B /* bowl.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA31E598020002C646B /* bowl.png */; };
+		6327ABA61E598020002C646B /* bowl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA41E598020002C646B /* bowl@2x.png */; };
 		63642FD31E57BE2600E6E773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD21E57BE2600E6E773 /* AppDelegate.swift */; };
 		63642FD51E57BE2600E6E773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD41E57BE2600E6E773 /* ViewController.swift */; };
 		63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FD61E57BE2600E6E773 /* Main.storyboard */; };
@@ -83,6 +87,12 @@
 		6327AB941E588AD2002C646B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6327AB961E5894D7002C646B /* smoke-detector-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "smoke-detector-1.wav"; sourceTree = "<group>"; };
 		6327AB981E5896A0002C646B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6327AB9D1E597B2B002C646B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
+		6327AB9E1E597B2B002C646B /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = SOURCE_ROOT; };
+		6327ABA11E597E58002C646B /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		6327ABA21E597F43002C646B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		6327ABA31E598020002C646B /* bowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl.png; sourceTree = SOURCE_ROOT; };
+		6327ABA41E598020002C646B /* bowl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bowl@2x.png"; sourceTree = SOURCE_ROOT; };
 		63642FCF1E57BE2600E6E773 /* SmartBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63642FD21E57BE2600E6E773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63642FD41E57BE2600E6E773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +180,12 @@
 				6327AB901E587B99002C646B /* GoogleService-Info.plist */,
 				6327AB961E5894D7002C646B /* smoke-detector-1.wav */,
 				6327AB981E5896A0002C646B /* icon.png */,
+				6327AB9D1E597B2B002C646B /* logo.png */,
+				6327AB9E1E597B2B002C646B /* logo@2x.png */,
+				6327ABA11E597E58002C646B /* Montserrat-Thin.ttf */,
+				6327ABA21E597F43002C646B /* Montserrat-Regular.ttf */,
+				6327ABA31E598020002C646B /* bowl.png */,
+				6327ABA41E598020002C646B /* bowl@2x.png */,
 			);
 			path = SmartBowl;
 			sourceTree = "<group>";
@@ -347,10 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63642FDD1E57BE2600E6E773 /* LaunchScreen.storyboard in Resources */,
+				6327ABA01E597B2B002C646B /* logo@2x.png in Resources */,
+				6327ABA51E598020002C646B /* bowl.png in Resources */,
 				63642FDA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
 				6327AB991E5896A0002C646B /* icon.png in Resources */,
 				63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */,
+				6327AB9F1E597B2B002C646B /* logo.png in Resources */,
 				6327AB911E587B99002C646B /* GoogleService-Info.plist in Resources */,
+				6327ABA61E598020002C646B /* bowl@2x.png in Resources */,
 				6327AB971E5894D7002C646B /* smoke-detector-1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

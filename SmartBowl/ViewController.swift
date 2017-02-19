@@ -30,10 +30,15 @@ class ViewController: UIViewController {
   /// Weight label
   @IBOutlet var weight: UILabel!
   
+  @IBOutlet var connectButton: UIButton!
+  
+  
   let notificationManager = LNRNotificationManager()
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    connectButton.layer.borderColor = UIColor.white.cgColor
     
     ref = FIRDatabase.database().reference()
     
@@ -54,14 +59,14 @@ class ViewController: UIViewController {
   
   @IBAction func scan(_ sender: Any) {
   
-    self.showNotification()
+//    self.showNotification()
   
     let service = CBUUID(string: "180F")
     let characteristic = CBUUID(string: "2A19")
     
     // 255 - sleep
     // 0 - garbage
-    // > 30 == 0
+    // >  == 0
     
     manager.scanForPeripherals(withServices: [service])
       .filter({ peripheral in
@@ -106,6 +111,9 @@ class ViewController: UIViewController {
       .addDisposableTo(disposeBag)
   }
   
+  /**
+    Show notification
+  */
   private func showNotification() {
     notificationManager.showNotification(notification: LNRNotification(title: "OwlBowl", body: "Please order some new fruits mate!", duration: -1, onTap: { () -> Void in
       print("Notification Dismissed")
@@ -118,9 +126,40 @@ class ViewController: UIViewController {
     Save weight to Firebase
   */
   private func saveWeight(data: Data?) {
-    guard let value = data?.hashValue else {
+    guard var value = data?.hashValue else {
       return
     }
+    
+    let val = data?.withUnsafeBytes { (ptr: UnsafePointer<Double>) -> Double in
+      return ptr.pointee
+    }
+    print(val) // 42.13
+    print(Int(val!))
+    
+    let firstByte = data?[0]
+    let secondByte = data?[1]
+    
+    print("\(firstByte) \(secondByte)")
+    
+    let weight = (Int(firstByte!) * 256) + Int(secondByte!)
+    
+    value = Int(weight)
+    
+//    let data4 = data?.subdata(in: 0..<4)
+//    let int = CFSwapInt32BigToHost(data4)
+    
+//    data4
+//    
+//    var i = CFSwapInt32BigToHost(data4
+//    
+//int value = CFSwapInt32BigToHost(*(int*)([data4 bytes]));
+
+    
+
+    
+//    let val = UInt32(bigEndian: bigEndianValue)
+
+    
     
     self.weight.text = "\(value)"
     
