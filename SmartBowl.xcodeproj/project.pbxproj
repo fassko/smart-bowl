@@ -18,9 +18,14 @@
 		6327AB991E5896A0002C646B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB981E5896A0002C646B /* icon.png */; };
 		6327AB9F1E597B2B002C646B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB9D1E597B2B002C646B /* logo.png */; };
 		6327ABA01E597B2B002C646B /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327AB9E1E597B2B002C646B /* logo@2x.png */; };
-		6327ABA51E598020002C646B /* bowl.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA31E598020002C646B /* bowl.png */; };
-		6327ABA61E598020002C646B /* bowl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA41E598020002C646B /* bowl@2x.png */; };
+		6327ABA51E598020002C646B /* bowl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA31E598020002C646B /* bowl0.png */; };
+		6327ABA61E598020002C646B /* bowl0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6327ABA41E598020002C646B /* bowl0@2x.png */; };
 		6355C1021E598B95004FB294 /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1011E598B95004FB294 /* LottieLogo1.json */; };
+		6355C1081E59A80A004FB294 /* bowl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1031E59A80A004FB294 /* bowl4.png */; };
+		6355C1091E59A80A004FB294 /* bowl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1041E59A80A004FB294 /* bowl3.png */; };
+		6355C10A1E59A80A004FB294 /* bowl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1051E59A80A004FB294 /* bowl2.png */; };
+		6355C10B1E59A80A004FB294 /* bowl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1061E59A80A004FB294 /* bowl1.png */; };
+		6355C10C1E59A80A004FB294 /* bowl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6355C1071E59A80A004FB294 /* bowl0.png */; };
 		63642FD31E57BE2600E6E773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD21E57BE2600E6E773 /* AppDelegate.swift */; };
 		63642FD51E57BE2600E6E773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FD41E57BE2600E6E773 /* ViewController.swift */; };
 		63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63642FD61E57BE2600E6E773 /* Main.storyboard */; };
@@ -35,8 +40,6 @@
 		63642FFC1E57BE2600E6E773 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63642FFB1E57BE2600E6E773 /* NotificationController.swift */; };
 		63642FFE1E57BE2600E6E773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63642FFD1E57BE2600E6E773 /* Assets.xcassets */; };
 		63CC14C61E59881700DA6BA8 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 63CC14C21E59881700DA6BA8 /* data.json */; };
-		63CC14C71E59881700DA6BA8 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC14C41E59881700DA6BA8 /* img_0.png */; };
-		63CC14C81E59881700DA6BA8 /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC14C51E59881700DA6BA8 /* img_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +98,14 @@
 		6327AB9E1E597B2B002C646B /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = SOURCE_ROOT; };
 		6327ABA11E597E58002C646B /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = SOURCE_ROOT; };
 		6327ABA21E597F43002C646B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = SOURCE_ROOT; };
-		6327ABA31E598020002C646B /* bowl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl.png; sourceTree = SOURCE_ROOT; };
-		6327ABA41E598020002C646B /* bowl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bowl@2x.png"; sourceTree = SOURCE_ROOT; };
+		6327ABA31E598020002C646B /* bowl0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl0.png; sourceTree = SOURCE_ROOT; };
+		6327ABA41E598020002C646B /* bowl0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bowl0@2x.png"; sourceTree = SOURCE_ROOT; };
 		6355C1011E598B95004FB294 /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1.json; sourceTree = "<group>"; };
+		6355C1031E59A80A004FB294 /* bowl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl4.png; sourceTree = "<group>"; };
+		6355C1041E59A80A004FB294 /* bowl3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl3.png; sourceTree = "<group>"; };
+		6355C1051E59A80A004FB294 /* bowl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl2.png; sourceTree = "<group>"; };
+		6355C1061E59A80A004FB294 /* bowl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl1.png; sourceTree = "<group>"; };
+		6355C1071E59A80A004FB294 /* bowl0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowl0.png; sourceTree = "<group>"; };
 		63642FCF1E57BE2600E6E773 /* SmartBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63642FD21E57BE2600E6E773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63642FD41E57BE2600E6E773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +125,6 @@
 		63642FFD1E57BE2600E6E773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63642FFF1E57BE2600E6E773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63CC14C21E59881700DA6BA8 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		63CC14C41E59881700DA6BA8 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_0.png; path = images/img_0.png; sourceTree = "<group>"; };
-		63CC14C51E59881700DA6BA8 /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_1.png; path = images/img_1.png; sourceTree = "<group>"; };
 		682A62D52C699B87355C03CE /* Pods_SmartBowl_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartBowl_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A974BC8E53826F53C2C37D /* Pods-SmartBowl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBowl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBowl/Pods-SmartBowl.debug.xcconfig"; sourceTree = "<group>"; };
 		D188893593642D567EAB8D22 /* Pods-SmartBowl WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBowl WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartBowl WatchKit Extension/Pods-SmartBowl WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,12 +198,15 @@
 				6327AB9E1E597B2B002C646B /* logo@2x.png */,
 				6327ABA11E597E58002C646B /* Montserrat-Thin.ttf */,
 				6327ABA21E597F43002C646B /* Montserrat-Regular.ttf */,
-				6327ABA31E598020002C646B /* bowl.png */,
-				6327ABA41E598020002C646B /* bowl@2x.png */,
+				6327ABA31E598020002C646B /* bowl0.png */,
+				6327ABA41E598020002C646B /* bowl0@2x.png */,
 				63CC14C21E59881700DA6BA8 /* data.json */,
 				6355C1011E598B95004FB294 /* LottieLogo1.json */,
-				63CC14C41E59881700DA6BA8 /* img_0.png */,
-				63CC14C51E59881700DA6BA8 /* img_1.png */,
+				6355C1031E59A80A004FB294 /* bowl4.png */,
+				6355C1041E59A80A004FB294 /* bowl3.png */,
+				6355C1051E59A80A004FB294 /* bowl2.png */,
+				6355C1061E59A80A004FB294 /* bowl1.png */,
+				6355C1071E59A80A004FB294 /* bowl0.png */,
 				63CC14C31E59881700DA6BA8 /* images */,
 			);
 			path = SmartBowl;
@@ -382,19 +391,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6355C10A1E59A80A004FB294 /* bowl2.png in Resources */,
 				63CC14C61E59881700DA6BA8 /* data.json in Resources */,
+				6355C10B1E59A80A004FB294 /* bowl1.png in Resources */,
 				6355C1021E598B95004FB294 /* LottieLogo1.json in Resources */,
+				6355C1091E59A80A004FB294 /* bowl3.png in Resources */,
 				63642FDD1E57BE2600E6E773 /* LaunchScreen.storyboard in Resources */,
 				6327ABA01E597B2B002C646B /* logo@2x.png in Resources */,
-				6327ABA51E598020002C646B /* bowl.png in Resources */,
+				6327ABA51E598020002C646B /* bowl0.png in Resources */,
+				6355C1081E59A80A004FB294 /* bowl4.png in Resources */,
 				63642FDA1E57BE2600E6E773 /* Assets.xcassets in Resources */,
-				63CC14C81E59881700DA6BA8 /* img_1.png in Resources */,
 				6327AB991E5896A0002C646B /* icon.png in Resources */,
 				63642FD81E57BE2600E6E773 /* Main.storyboard in Resources */,
+				6355C10C1E59A80A004FB294 /* bowl0.png in Resources */,
 				6327AB9F1E597B2B002C646B /* logo.png in Resources */,
-				63CC14C71E59881700DA6BA8 /* img_0.png in Resources */,
 				6327AB911E587B99002C646B /* GoogleService-Info.plist in Resources */,
-				6327ABA61E598020002C646B /* bowl@2x.png in Resources */,
+				6327ABA61E598020002C646B /* bowl0@2x.png in Resources */,
 				6327AB971E5894D7002C646B /* smoke-detector-1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,33 +29,52 @@ class ViewController: UIViewController {
   /// Firebase database
   var ref:  FIRDatabaseReference!
   
+  /// Lottie animation view
+  fileprivate var lottieLogo: LOTAnimationView!
+  
+  /// Notification manager
+  let notificationManager = LNRNotificationManager()
+  
+  var changes: Variable<Int> = Variable(0)
+  
   /// Weight label
   @IBOutlet var weight: UILabel!
   
   @IBOutlet var connectButton: UIButton!
   
-  fileprivate var lottieLogo: LOTAnimationView!
+  @IBOutlet var bowl: UIImageView!
+  
+  @IBAction func changes(_ sender: Any) {
+    changes.value += 1
+  }
+  
+  @IBAction func reset(_ sender: Any) {
+    changes.value = 0
+  }
   
   
-  let notificationManager = LNRNotificationManager()
-
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//      lottieLogo = LOTAnimationView.animationNamed("data")
-//      lottieLogo.contentMode = .scaleAspectFill
+    changes.asObservable()
+      .flatMap({c -> Observable<Int> in
+        
+        if c >= 4 {
+          return Observable.just(4)
+        }
+        
+        return Observable.just(c)
+      })
+      .subscribe(onNext: {c in
+      
+        print(c)
+      
+        self.bowl.image = UIImage(named: "bowl\(c).png")
+      })
+      .addDisposableTo(disposeBag)
     
-//    let animationView = LOTAnimationView.animationNamed("data.json")
-//    animationView?.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
-//    animationView?.contentMode = .scaleAspectFill
-    
-//    animationView?.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.3)
-    
-//    self.view.addSubview(animationView!)
-
-//    animationView?.play(completion: { (finished) in
-//      // Do Something
-//    })
+//    lottieLogo = LOTAnimationView.animationNamed("LottieLogo1")
+//    lottieLogo.contentMode = .scaleAspectFill
     
     connectButton.layer.borderColor = UIColor.white.cgColor
     
@@ -87,14 +106,8 @@ class ViewController: UIViewController {
   
   @IBAction func scan(_ sender: Any) {
   
-//    self.showNotification()
-  
     let service = CBUUID(string: "180F")
     let characteristic = CBUUID(string: "2A19")
-    
-    // 255 - sleep
-    // 0 - garbage
-    // >  == 0
     
     manager.scanForPeripherals(withServices: [service])
       .filter({ peripheral in
@@ -158,11 +171,11 @@ class ViewController: UIViewController {
       return
     }
     
-    let val = data?.withUnsafeBytes { (ptr: UnsafePointer<Double>) -> Double in
-      return ptr.pointee
-    }
-    print(val) // 42.13
-    print(Int(val!))
+//    let val = data?.withUnsafeBytes { (ptr: UnsafePointer<Double>) -> Double in
+//      return ptr.pointee
+//    }
+//    print(val) // 42.13
+//    print(Int(val!))
     
     let firstByte = data?[0]
     let secondByte = data?[1]
@@ -184,10 +197,13 @@ class ViewController: UIViewController {
 
     //    let val = UInt32(bigEndian: bigEndianValue)
 
-    self.weight.text = "\(value)"
+    self.weight.text = "\(value) grams"
     
     print("Weight = \(value)")
 
+    // set value in Firebase
     self.ref.child("scale").child("weight").setValue(value)
+    
+    self.changes.value += 1
   }
 }

@@ -75,27 +75,59 @@
                                     <constraint firstAttribute="trailing" secondItem="fzn-kL-mWf" secondAttribute="trailing" constant="8" id="uIo-rs-VAe"/>
                                 </constraints>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bowl.png" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-ak-Txd">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bowl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-ak-Txd">
                                 <rect key="frame" x="75" y="252" width="224" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="Iza-zj-Z0S"/>
                                     <constraint firstAttribute="width" constant="224" id="fnH-ZA-GYh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hix-br-YQG">
+                                <rect key="frame" x="75" y="252" width="224" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="DLg-0A-JYG"/>
+                                    <constraint firstAttribute="width" constant="224" id="vY3-oR-mOu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqB-Sk-O3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-z1-hG9">
+                                <rect key="frame" x="40" y="60" width="295" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="GXw-MP-cen"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="295" id="lzm-6H-paa"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ath-8K-jVi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hix-br-YQG" firstAttribute="leading" secondItem="dhG-ak-Txd" secondAttribute="leading" id="1Kw-qD-0jf"/>
+                            <constraint firstItem="hix-br-YQG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3S1-jt-ypj"/>
+                            <constraint firstItem="hix-br-YQG" firstAttribute="bottom" secondItem="dhG-ak-Txd" secondAttribute="bottom" id="7L8-Jz-esI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x9E-jS-ewX" secondAttribute="bottom" id="7dr-4G-axb"/>
                             <constraint firstItem="dhG-ak-Txd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83S-a6-72r"/>
+                            <constraint firstItem="eT5-z1-hG9" firstAttribute="centerX" secondItem="hix-br-YQG" secondAttribute="centerX" id="InR-07-X1T"/>
                             <constraint firstItem="dhG-ak-Txd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ix6-eJ-Dtg"/>
                             <constraint firstAttribute="trailing" secondItem="x9E-jS-ewX" secondAttribute="trailing" id="J30-cf-lrB"/>
+                            <constraint firstItem="eT5-z1-hG9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Lgh-vy-l4V"/>
                             <constraint firstItem="YEn-jM-hnD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="SvR-DA-tB1"/>
+                            <constraint firstItem="eT5-z1-hG9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="flU-33-eER"/>
                             <constraint firstItem="x9E-jS-ewX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fwu-XH-GYE"/>
+                            <constraint firstItem="hix-br-YQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fxO-6f-tvO"/>
+                            <constraint firstItem="eT5-z1-hG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="gLx-Ox-kwT"/>
                             <constraint firstItem="YEn-jM-hnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="jNG-cR-6bn"/>
+                            <constraint firstItem="hix-br-YQG" firstAttribute="top" secondItem="dhG-ak-Txd" secondAttribute="top" id="jbe-5E-EIb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YEn-jM-hnD" secondAttribute="trailing" constant="24" id="mw2-3f-N6Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eT5-z1-hG9" secondAttribute="trailing" constant="24" id="v59-ZZ-8q1"/>
+                            <constraint firstItem="eT5-z1-hG9" firstAttribute="leading" secondItem="YEn-jM-hnD" secondAttribute="leading" id="y0B-1B-wOL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bowl" destination="dhG-ak-Txd" id="yBI-Sy-BU8"/>
                         <outlet property="connectButton" destination="Btc-de-0cV" id="kp2-Ji-IV0"/>
                         <outlet property="weight" destination="fzn-kL-mWf" id="SVl-5a-720"/>
                     </connections>
@@ -106,7 +138,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bowl.png" width="224" height="162"/>
+        <image name="bowl1.png" width="449" height="325"/>
         <image name="logo.png" width="589" height="124"/>
     </resources>
 </document>
