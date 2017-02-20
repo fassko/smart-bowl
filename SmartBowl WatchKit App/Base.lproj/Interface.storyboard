@@ -15,7 +15,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SmartBowl_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView alignment="left" image="bowl0" id="uB0-Os-6Cu"/>
-                        <button width="1" alignment="left" title="2,50 kg" id="R7e-VX-F83">
+                        <button width="1" alignment="left" title="350 grams" id="R7e-VX-F83">
                             <connections>
                                 <action selector="change" destination="AgC-eL-Hgc" id="Dwx-Vb-Qhn"/>
                             </connections>
